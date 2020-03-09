@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>StoryScissors Manual</title>
+<meta name="author" content="aiedv.ch">
+<meta name="keywords" content="indesign, paragraph, split, splitter, javascript, extendscript">
+<style type="text/css">
+* {
+	font-family:"Tahoma","Verdana","Arial",sans-serif;
+	font-weight:normal;
+	font-size:10pt;
+	color:#555;
+}
+.body {
+	width:600px;
+	margin:0 auto 0 auto;
+	padding-left:15px; padding-right:15px;
+	border-left:1px dotted #bbb; border-right:1px dotted #bbb;
+}
+.doctitle {
+	font-size:20pt; font-weight:bold;
+}
+.title {
+	font-size:16pt; font-weight:bold;
+	margin-top:35px;
+	margin-bottom:8px;
+}
+.subtitle {
+	font-size:12pt; font-weight:bold;
+	margin-top:35px;
+	margin-bottom:8px;
+}
+.bold {
+	font-size:10pt; font-weight:bold;
+}
+.txt {
+}
+.dialog {
+	width:450px;
+	padding:8px;
+	background-color:#ddd;
+}
+.dialogtbl {
+	width:100%;
+}
+.lcol {
+	width:60px;
+}
+.pop {
+	width:300px;
+	margin-top:3px; margin-bottom:3px;
+	padding:2px; padding-left:6px;
+	background-color:white;
+	border:1px solid #999;
+	border-bottom:2px solid #aaa;
+	display:inline-block;
+}
+.poper {
+	width:16px;
+	margin-top:3px; margin-bottom:3px;
+	padding:2px; padding-left:6px;
+	position:relative;
+	background-color:#B5B6FF;
+	border:1px solid #999;
+	border-bottom:2px solid #aaa;
+	display:inline-block;
+}
+.bgwhite {
+	background-color:white;
+}
+.head {
+	text-align:center;
+}
+.logo {
+	margin-top:15px;
+}
+.clear {
+	clear:both;
+}
+</style>
+</head>
+
+<body class="body">
+<div class="head">
+	<img class="logo" src="SS-logo_350x149_tiny.png" alt="StoryScissors logo"><br>
+	<br>
+	<div class="doctitle">StoryScissors Manual</div>
+	<br>
+	StoryScissors.jsx<br>
+	Javascript for InDesign CC, CS6<br>
+	Version: 2.0<br>
+	License: GPL3, Open Source
+</div>
+
+<div class="clear"></div>
+
+<div class="subtitle">PURPOSE:</div>
+<h1>
+	Cut/split text flowing in chained frames into single text frames at given paragraph styles.<br>
+	Useful to split <br>
+	- classified columns into one ad per frame<br>
+	- official publications into sections and subsections<br>
+	- schedules in blocks of departure stations<br>
+	or<br>
+	manually split at any desired paragraph<br>
+	<br>
+	and as an extra:<br>
+	split text frames, defined to have multiple columns, into chained single column text frames.<br>
+</h1>
+
+<div class="title">Split Stories Using StoryScissors</div>
+
+Double click the script 'StoryScissors.jsx' from InDesign's Scripts palette and this window shows up:<br>
+<br>
+<img src="StoryScissors_1_main.jpg" alt="StoryScissors main window"><br>
+<br>
+The text fields, marked with red arrows, give you some hints on what you have to do.<br>
+In this case, you should open a document.<br>
+<br>
+So, best is to open a document!:<br>
+<br>
+<img src="StoryScissors_2_docopen.jpg" alt="StoryScissors paragrah chooser"><br>
+<br>
+The next hints say, that we should select a text frame and one or more paragraph styles.<br>
+In this case, we want to split up a port schedule, contained in chained text frames, at the departure ports (marked with red arrows):<br>
+<br>
+<img src="portShedule_1.jpg" alt="port schedule unsplit"><br>
+<br>
+We select one of the chaines frames (it also may be a multi columns frame), select the paragraph style 'PortName' and hit the [ Split ] button.<br>
+After completion, the entire chain is split into single text frames containing just one departure port (not all, but some of the split text boxes are framed red):<br>
+<br>
+<img src="portShedule_2.jpg" alt="port schedule split"><br>
+<br>
+That's it.<br>
+
+
+
+<div class="title">Split Hints</div>
+a) Set the cursor into a paragraph and hit [ Split ]: The frame will be split at the beginning of this paragraph.<br>
+<br>
+b) Select multiple frames and hit [ Split ]: All selected text frames will be split at the selected paragraph style(s).<br>
+<br>
+c) Select multiple frames and hit [ Frame Split ]: All selected multi column text frames will be split into chained single column frames.<br>
+
+
+<div class="title">StoryScissors Options</div>
+Several options may be checked – in the below screen shot circled red:<br>
+<br>
+<img src="StoryScissors_options.jpg" alt="StoryScissors Options"><br>
+
+<div class="subtitle">Options are:</div>
+
+<div class="bold">Entire Document</div>
+When checked, the entire document will be split. We have to choose the paragraphs to split at and to hit the [ Split ] button.<br>
+We do not have to select a text frame.<br>
+<br>
+<div class="bold">Frames as small as possible</div>
+When checked, the split frames will be made as small as needed.<br>
+<br>
+<div class="bold">Silently split multi-column frames</div>
+When checked, we will not be asked to automatically split multi column text frames in single column chained frames.<br>
+<br>
+<div class="bold">no messages</div>
+When checked, no processing messages will be shown.<br>
+
+
+
+
+
+<br><br>
+<div class="subtitle">DISCLAIMER:</div>
+Absolutely no warranty.<br>
+<br>
+Author: Andreas Imhof, ©www.aiedv.ch<br>
+<br>
+<br>
+</body>
+</html>
